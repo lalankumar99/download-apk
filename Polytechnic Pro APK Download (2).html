@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Polytechnic Hub Premium APK - The Ultimate Engineering Companion</title>
+    <meta name="description" content="Download Polytechnic Hub Premium APK. Access premium notes, previous year papers, and syllabus for all engineering branches. Fast, secure, and free download.">
+    
+    <!-- Google Fonts: Inter for clean UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf',
+                            500: '#14b8a6', // Teal primary
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        dark: {
+                            bg: '#0f172a', // Slate 900
+                            card: 'rgba(30, 41, 59, 0.7)', // Glassmorphism base
+                            border: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'spin-slow': 'spin 8s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 10px rgba(20, 184, 166, 0.2)' },
+                            '100%': { boxShadow: '0 0 25px rgba(20, 184, 166, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Glassmorphism and specific animations -->
+    <style>
+        body {
+            background-color: #0f172a;
+            /* Enhanced glowing orb background */
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(20, 184, 166, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .glass-panel.scrolled {
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom-color: rgba(20, 184, 166, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: skewX(-20deg);
+            transition: all 0.6s ease;
+        }
+
+        .glass-card:hover::before {
+            left: 200%;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(20, 184, 166, 0.4);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4), 0 0 20px rgba(20, 184, 166, 0.1);
+        }
+
+        /* Modern Button Styling */
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+        
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(45deg, #0d9488, #2563eb, #0d9488);
+            background-size: 200% 200%;
+            z-index: -1;
+            transition: opacity 0.3s ease, background-position 0.5s ease;
+            opacity: 1;
+        }
+
+        .btn-modern:hover::before {
+            background-position: 100% 50%;
+            animation: pulse-border 2s linear infinite;
+        }
+
+        .btn-modern::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: linear-gradient(to bottom right, rgba(20, 184, 166, 0.9), rgba(59, 130, 246, 0.9));
+            border-radius: inherit;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-modern:hover::after {
+            opacity: 0.8;
+        }
+
+        /* Download Button Glow Effect */
+        .btn-glow {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, #14b8a6, #3b82f6, #14b8a6);
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: inherit;
+        }
+
+        .btn-glow:hover::before {
+            opacity: 0.8;
+            animation: glowing 2s linear infinite;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+
+        /* Progress Bar */
+        .progress-bar-container {
+            width: 100%;
+            background-color: rgba(30, 41, 59, 0.8);
+            border-radius: 9999px;
+            overflow: hidden;
+            height: 6px;
+            margin-top: 1.5rem;
+            display: none; /* Hidden initially */
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #14b8a6, #3b82f6, #8b5cf6);
+            background-size: 200% 100%;
+            width: 0%;
+            transition: width 0.1s linear;
+            animation: progress-shimmer 2s linear infinite;
+            border-radius: 9999px;
+        }
+
+        @keyframes progress-shimmer {
+            0% { background-position: 100% 0; }
+            100% { background-position: -100% 0; }
+        }
+
+        /* Confetti Canvas */
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Stylish Text Logo with Custom Icon (Crown) -->
+                <div class="flex items-center cursor-default group">
+                    <!-- Custom Header Icon (Not the app image) -->
+                    <i class="fa-solid fa-crown text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] text-3xl mr-3 transform group-hover:scale-110 transition-transform duration-300"></i>
+                    
+                    <div class="flex flex-col justify-center relative">
+                        <span class="text-2xl sm:text-3xl font-extrabold tracking-tighter uppercase leading-none">
+                            <span class="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]">Polytechnic</span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-blue-400 to-purple-500 ml-1 drop-shadow-[0_0_12px_rgba(59,130,246,0.3)]">Hub Premium</span>
+                        </span>
+                        <!-- Animated Underline on Hover -->
+                        <span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-gradient-to-r from-brand-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#features" class="text-gray-300 hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-white/10 border border-transparent hover:border-white/20">Features</a>
+                        <a href="#details" class="text-gray-300 hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all hover:bg-white/10 border border-transparent hover:border-white/20">App Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-32 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        
+        <!-- NOTE: Advertisement blocks have been completely removed for a cleaner look -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Hero Text & Features -->
+            <div class="lg:col-span-7 space-y-12">
+                
+                <!-- Hero Header -->
+                <div class="space-y-6 relative">
+                    <!-- Subtle background glow behind text -->
+                    <div class="absolute -left-10 top-0 w-32 h-32 bg-brand-500/20 rounded-full blur-3xl -z-10"></div>
+                    
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-brand-500/30 text-brand-300 text-xs font-bold uppercase tracking-wider mb-2 shadow-lg backdrop-blur-sm">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                        </span>
+                        Latest Release: v2.4.1
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                        Master Your <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-br from-brand-300 via-brand-500 to-blue-600">Diploma Exams.</span>
+                    </h1>
+                    <p class="text-lg text-slate-400 max-w-2xl leading-relaxed font-light">
+                        The definitive academic companion for polytechnic students. Access pristine handwritten notes, curated PYQs, and a seamless ad-free study experience tailored for your success.
+                    </p>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="features">
+                    <!-- Feature 1 -->
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-5 group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/10 to-blue-600/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 text-blue-400 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
+                            <i class="fa-solid fa-book-open text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1 group-hover:text-blue-300 transition-colors">Premium Notes</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">High-yield, branch-specific notes structured for rapid revision.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-5 group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500/10 to-purple-600/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0 text-purple-400 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(168,85,247,0.15)]">
+                            <i class="fa-solid fa-file-lines text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1 group-hover:text-purple-300 transition-colors">PYQ Archive</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Comprehensive decade-long solved question papers database.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-5 group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-brand-500/10 to-brand-600/10 border border-brand-500/20 flex items-center justify-center flex-shrink-0 text-brand-400 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(20,184,166,0.15)]">
+                            <i class="fa-solid fa-bolt text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1 group-hover:text-brand-300 transition-colors">Zero Distractions</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">100% clean interface. Download once, study seamlessly offline.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="glass-card p-6 rounded-2xl flex items-start gap-5 group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-rose-500/10 to-rose-600/10 border border-rose-500/20 flex items-center justify-center flex-shrink-0 text-rose-400 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(244,63,94,0.15)]">
+                            <i class="fa-solid fa-bell text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1 group-hover:text-rose-300 transition-colors">Instant Alerts</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Crucial notifications for board datesheets and results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Download Card -->
+            <div class="lg:col-span-5 relative z-10 lg:ml-8">
+                <!-- Premium decorative background -->
+                <div class="absolute -inset-1 bg-gradient-to-br from-brand-500 via-blue-500 to-purple-600 rounded-[2.5rem] blur-2xl opacity-25 animate-pulse-slow"></div>
+                
+                <div class="glass-panel !bg-slate-900/80 rounded-[2rem] p-8 sm:p-10 relative border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
+                    
+                    <!-- App Icon with original image URL provided by user -->
+                    <div class="flex justify-center mb-8 relative">
+                        <div class="absolute inset-0 bg-brand-500 blur-xl opacity-30 rounded-full scale-150"></div>
+                        <div class="w-28 h-28 rounded-3xl bg-gradient-to-br from-slate-700 to-slate-900 p-[2px] shadow-2xl relative z-10 ring-1 ring-white/20">
+                            <!-- Image URL added here, with app.png as fallback -->
+                            <img src="https://yt3.googleusercontent.com/juBR9f7s9ukbVzQmNyeKHZdYGEp96D2GBDzmSrrXSSp7c9tK-pqTXlcb2h5ZayBlSM5T8KVDWg=s160-c-k-c0x00ffffff-no-rj" 
+                                 onerror="this.src='app.png'"
+                                 alt="Polytechnic Hub Premium App Icon" 
+                                 class="w-full h-full rounded-[22px] object-cover bg-slate-900">
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold text-white mb-2 tracking-tight">Polytechnic Hub <span class="text-brand-400">Premium</span></h2>
+                        <div class="flex items-center justify-center gap-2 text-sm text-slate-400 mb-6 bg-slate-800/50 w-max mx-auto px-4 py-1.5 rounded-full border border-white/5">
+                            <span class="flex items-center text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </span>
+                            <span class="font-medium">4.8 • 12K+ Ratings</span>
+                        </div>
+
+                        <!-- App Meta Info grid -->
+                        <div class="grid grid-cols-3 gap-4 py-5 border-y border-slate-700/50 bg-slate-900/30 rounded-2xl">
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-code-branch text-slate-400 mb-1.5 text-lg"></i>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-0.5">Version</span>
+                                <span class="text-sm font-bold text-slate-200">v2.4.1</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center border-x border-slate-700/50">
+                                <i class="fa-solid fa-file-zipper text-slate-400 mb-1.5 text-lg"></i>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-0.5">Size</span>
+                                <span class="text-sm font-bold text-slate-200">24.5 MB</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fa-brands fa-android text-slate-400 mb-1.5 text-lg"></i>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-0.5">OS</span>
+                                <span class="text-sm font-bold text-slate-200">Android 6+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Section Action Area -->
+                    <div id="download-section" class="space-y-5">
+                        
+                        <!-- Initial Generate Link Button -->
+                        <button id="btn-generate" onclick="startTimer()" class="btn-modern w-full text-white font-bold py-4 px-6 rounded-2xl shadow-[0_10px_20px_-10px_rgba(20,184,166,0.5)] flex items-center justify-center gap-3 transform hover:-translate-y-1">
+                            <i class="fa-solid fa-link text-xl"></i>
+                            <span class="text-lg tracking-wide">Generate Secure Link</span>
+                        </button>
+
+                        <!-- Timer / Status Text -->
+                        <div id="status-container" class="hidden flex-col items-center justify-center py-4 bg-slate-900/60 rounded-2xl border border-slate-700/50">
+                            <div class="relative w-16 h-16 mb-3 flex items-center justify-center">
+                                <svg id="spinner-svg" class="animate-spin -ml-1 mr-3 h-10 w-10 text-brand-500 absolute" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <span id="timer-display" class="font-bold text-2xl text-white relative z-10">5</span>
+                            </div>
+                            <p id="status-text" class="text-slate-300 font-medium text-center text-sm">
+                                Preparing premium file transfer...
+                            </p>
+                            <!-- Progress bar -->
+                            <div id="progress-container" class="progress-bar-container w-4/5 mx-auto">
+                                <div id="progress-bar" class="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Final Download Button (Points strictly to the polytechnichub.apk) -->
+                        <a id="btn-download" href="polytechnichub.apk" download="polytechnichub.apk" class="hidden btn-modern w-full text-white font-bold py-4 px-6 rounded-2xl shadow-[0_10px_20px_-10px_rgba(59,130,246,0.5)] flex items-center justify-center gap-3 transform hover:-translate-y-1 animate-glow" onclick="triggerConfettiAndFeedback()">
+                            <i class="fa-solid fa-cloud-arrow-down text-2xl animate-bounce"></i>
+                            <span class="text-lg tracking-wide">Download APK Now</span>
+                        </a>
+
+                        <div class="text-center pt-2">
+                            <p class="text-xs text-slate-400 flex items-center justify-center gap-1.5 font-medium bg-slate-800/30 w-max mx-auto px-3 py-1 rounded-full border border-slate-700/30">
+                                <i class="fa-solid fa-shield-check text-emerald-400"></i> Verified Safe • No Malware Detected
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Details Section -->
+        <section id="details" class="mt-32 pt-16 border-t border-slate-800/50 relative">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"></div>
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Why Upgrade to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-blue-400">Premium?</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Elevate your study routine with tools designed specifically for technical education.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                <div class="glass-card p-8 rounded-[2rem]">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-6 border border-slate-700">
+                        <i class="fa-solid fa-layer-group text-xl text-brand-400"></i>
+                    </div>
+                    <h4 class="text-slate-200 font-bold text-xl mb-3">All Branches Covered</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Whether you are in CS, Mechanical, Civil, or Electrical, we provide complete semester-wise materials aligned perfectly with current syllabi.</p>
+                </div>
+                <div class="glass-card p-8 rounded-[2rem]">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-6 border border-slate-700">
+                        <i class="fa-solid fa-ban text-xl text-rose-400"></i>
+                    </div>
+                    <h4 class="text-slate-200 font-bold text-xl mb-3">Zero Interruptions</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">No ads, no popups. A completely clean study environment focused purely on your preparation.</p>
+                </div>
+                <div class="glass-card p-8 rounded-[2rem]">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-6 border border-slate-700">
+                        <i class="fa-solid fa-file-pdf text-xl text-blue-400"></i>
+                    </div>
+                    <h4 class="text-slate-200 font-bold text-xl mb-3">Built-in Pro Viewer</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">No need for external apps. Open heavy blueprints and PDF papers instantly with our lightning-fast, night-mode enabled internal viewer.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] border-t border-white/5 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-brand-500"></i>
+                <span class="text-white font-semibold">Polytechnic Hub &copy; 2026</span>
+            </div>
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="#" class="hover:text-brand-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">DMCA</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">Contact</a>
+            </div>
+            <div class="text-xs text-gray-600">
+                Not affiliated with any official government educational board.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Timer Logic
+        const TIMER_SECONDS = 5;
+
+        function startTimer() {
+            const btnGenerate = document.getElementById('btn-generate');
+            const statusContainer = document.getElementById('status-container');
+            const timerDisplay = document.getElementById('timer-display');
+            const btnDownload = document.getElementById('btn-download');
+            const statusText = document.getElementById('status-text');
+            const progressContainer = document.getElementById('progress-container');
+            const progressBar = document.getElementById('progress-bar');
+            const spinnerSvg = document.getElementById('spinner-svg');
+
+            // Hide generate button, show timer
+            btnGenerate.classList.add('hidden');
+            statusContainer.classList.remove('hidden');
+            statusContainer.classList.add('flex');
+            progressContainer.style.display = 'block';
+            
+            let timeLeft = TIMER_SECONDS;
+            timerDisplay.innerText = timeLeft;
+
+            // Progress bar animation setup
+            let progress = 0;
+            const intervalTime = 50; // update every 50ms for smooth effect
+            const totalIntervals = (TIMER_SECONDS * 1000) / intervalTime;
+            const progressIncrement = 100 / totalIntervals;
+
+            // 1. Progress Bar Logic
+            const progressInterval = setInterval(() => {
+                progress += progressIncrement;
+                if (progress <= 100) {
+                    progressBar.style.width = `${progress}%`;
+                }
+            }, intervalTime);
+
+            // 2. Countdown Timer Logic
+            const countdownInterval = setInterval(() => {
+                timeLeft--;
+                timerDisplay.innerText = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    clearInterval(progressInterval);
+                    
+                    // Update UI state for final download
+                    progressBar.style.width = '100%';
+                    spinnerSvg.style.display = 'none'; // Hide spinner
+                    timerDisplay.style.display = 'none'; // Hide number
+                    
+                    statusText.innerHTML = '<span class="text-emerald-400 font-bold text-base"><i class="fa-solid fa-circle-check mr-2"></i>Link Generated Successfully!</span>';
+                    
+                    // Show final download button after a tiny delay for visual effect
+                    setTimeout(() => {
+                        statusContainer.classList.add('hidden');
+                        statusContainer.classList.remove('flex');
+                        btnDownload.classList.remove('hidden');
+                    }, 800);
+                }
+            }, 1000);
+        }
+
+        // Visual feedback when the real download is clicked
+        function triggerConfettiAndFeedback() {
+            const btnDownload = document.getElementById('btn-download');
+            const originalHTML = btnDownload.innerHTML;
+            
+            // Fire confetti!
+            fireConfetti();
+
+            // Give some visual feedback that the button was clicked
+            btnDownload.innerHTML = '<i class="fa-solid fa-check text-2xl"></i><span class="text-lg tracking-wide">Downloading Started...</span>';
+            // Change button color temporarily
+            btnDownload.style.setProperty('--tw-gradient-from', '#059669');
+            btnDownload.style.setProperty('--tw-gradient-to', '#10b981');
+            btnDownload.style.setProperty('--tw-gradient-stops', 'var(--tw-gradient-from), var(--tw-gradient-to)');
+            
+            // Reset button visually after a few seconds
+            setTimeout(() => {
+                btnDownload.innerHTML = originalHTML;
+                btnDownload.style.removeProperty('--tw-gradient-from');
+                btnDownload.style.removeProperty('--tw-gradient-to');
+                btnDownload.style.removeProperty('--tw-gradient-stops');
+            }, 4000);
+        }
+
+        // Confetti Particle System
+        function fireConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const pieces = [];
+            const colors = ['#14b8a6', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6'];
+
+            for (let i = 0; i < 100; i++) {
+                pieces.push({
+                    x: canvas.width / 2,
+                    y: canvas.height / 2 + 100, // Start slightly below center
+                    vx: (Math.random() - 0.5) * 20,
+                    vy: (Math.random() - 1) * 20 - 5,
+                    size: Math.random() * 10 + 5,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rotation: Math.random() * 360,
+                    rotationSpeed: (Math.random() - 0.5) * 10
+                });
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let active = false;
+
+                pieces.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.5; // Gravity
+                    p.rotation += p.rotationSpeed;
+
+                    if (p.y < canvas.height) {
+                        active = true;
+                        ctx.save();
+                        ctx.translate(p.x, p.y);
+                        ctx.rotate(p.rotation * Math.PI / 180);
+                        ctx.fillStyle = p.color;
+                        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                        ctx.restore();
+                    }
+                });
+
+                if (active) {
+                    requestAnimationFrame(animate);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            animate();
+            
+            // Handle resize for canvas
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+    </script>
+</body>
+</html>
