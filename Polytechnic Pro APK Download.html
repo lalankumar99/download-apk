@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Polytechnic Pro APK - The Ultimate Engineering Companion</title>
+    <meta name="description" content="Download Polytechnic Pro APK. Access premium notes, previous year papers, and syllabus for all engineering branches. Fast, secure, and free download.">
+    
+    <!-- Google Fonts: Inter for clean UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal primary
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        dark: {
+                            bg: '#0f172a', // Slate 900
+                            card: 'rgba(30, 41, 59, 0.7)', // Glassmorphism base
+                            border: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Glassmorphism and specific animations -->
+    <style>
+        body {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 40% 20%, hsla(169,100%,74%,0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189,100%,56%,0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(355,100%,93%,0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(20, 184, 166, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Download Button Styling */
+        .btn-glow {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, #14b8a6, #3b82f6, #14b8a6);
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: inherit;
+        }
+
+        .btn-glow:hover::before {
+            opacity: 0.8;
+            animation: glowing 2s linear infinite;
+        }
+
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        .btn-disabled {
+            background: #334155 !important;
+            color: #94a3b8 !important;
+            cursor: not-allowed;
+            border-color: transparent !important;
+        }
+        
+        .btn-disabled::before {
+            display: none;
+        }
+
+        /* Ad Placeholder Styling */
+        .ad-placeholder {
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(30, 41, 59, 0.5),
+                rgba(30, 41, 59, 0.5) 10px,
+                rgba(15, 23, 42, 0.5) 10px,
+                rgba(15, 23, 42, 0.5) 20px
+            );
+            border: 1px dashed rgba(148, 163, 184, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+
+        /* Progress Bar */
+        .progress-bar-container {
+            width: 100%;
+            background-color: #334155;
+            border-radius: 9999px;
+            overflow: hidden;
+            height: 4px;
+            margin-top: 1rem;
+            display: none; /* Hidden initially */
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #14b8a6, #3b82f6);
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* Confetti Canvas */
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans">
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-t-0 border-l-0 border-r-0 border-b border-dark-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-blue-600 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                        <i class="fa-solid fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-white">Polytechnic <span class="text-brand-500">Pro</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="text-gray-300 hover:text-white hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                        <a href="#details" class="text-gray-300 hover:text-white hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">App Info</a>
+                        <a href="#faq" class="text-gray-300 hover:text-white hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        
+        <!-- Top Banner Ad Placeholder -->
+        <div class="w-full max-w-4xl mx-auto h-24 ad-placeholder rounded-xl mb-12 shadow-inner">
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-rectangle-ad text-2xl mb-1"></i>
+                <span>Advertisement (728x90)</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left Column: Hero Text & Features -->
+            <div class="lg:col-span-7 space-y-10">
+                
+                <!-- Hero Header -->
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-sm font-semibold mb-2">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                        </span>
+                        Latest Version v2.4.1 Updated
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Ace Your Diploma with <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-blue-500">Polytechnic Pro</span>
+                    </h1>
+                    <p class="text-lg text-gray-400 max-w-2xl leading-relaxed">
+                        The all-in-one companion app for polytechnic students. Access premium handwritten notes, previous year question papers, interactive syllabus, and video lectures in one seamless, ad-free experience.
+                    </p>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Feature 1 -->
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center flex-shrink-0 text-blue-400">
+                            <i class="fa-solid fa-book-open text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1">Premium Notes</h3>
+                            <p class="text-gray-400 text-sm">High-quality, branch-wise notes curated by toppers and professors.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center flex-shrink-0 text-purple-400">
+                            <i class="fa-solid fa-file-lines text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1">PYQ Archive</h3>
+                            <p class="text-gray-400 text-sm">Last 10 years of solved question papers for optimal exam prep.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-500/10 flex items-center justify-center flex-shrink-0 text-brand-400">
+                            <i class="fa-solid fa-bolt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1">Offline Access</h3>
+                            <p class="text-gray-400 text-sm">Download materials once and study anywhere, without internet.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-500/10 flex items-center justify-center flex-shrink-0 text-rose-400">
+                            <i class="fa-solid fa-bell text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold text-lg mb-1">Instant Alerts</h3>
+                            <p class="text-gray-400 text-sm">Real-time notifications for BTEUP/SBTE exam dates and results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-content Ad Placeholder -->
+                <div class="w-full h-[250px] sm:h-24 ad-placeholder rounded-xl">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-rectangle-ad text-2xl mb-1"></i>
+                        <span class="text-center px-4">Advertisement <br class="sm:hidden"/> (300x250 or 728x90)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Download Card -->
+            <div class="lg:col-span-5 relative z-10">
+                <!-- Decorative element behind card -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-blue-600 rounded-[32px] blur-xl opacity-20 animate-pulse-slow"></div>
+                
+                <div class="glass-panel rounded-3xl p-6 sm:p-8 relative">
+                    <!-- App Icon -->
+                    <div class="flex justify-center mb-6">
+                        <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-400 to-blue-600 p-1 shadow-2xl shadow-brand-500/30 animate-float">
+                            <div class="w-full h-full bg-[#0f172a] rounded-[14px] flex items-center justify-center">
+                                <i class="fa-solid fa-graduation-cap text-4xl text-transparent bg-clip-text bg-gradient-to-br from-brand-300 to-blue-400"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl font-bold text-white mb-1">Polytechnic Pro</h2>
+                        <div class="flex items-center justify-center gap-2 text-sm text-gray-400 mb-4">
+                            <span class="flex items-center text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </span>
+                            <span>4.8 (12K+ Reviews)</span>
+                        </div>
+
+                        <!-- App Meta Info grid -->
+                        <div class="grid grid-cols-3 gap-2 py-4 border-y border-dark-border">
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-code-branch text-brand-400 mb-1"></i>
+                                <span class="text-xs text-gray-400">Version</span>
+                                <span class="text-sm font-semibold text-white">v2.4.1</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center border-x border-dark-border">
+                                <i class="fa-solid fa-file-zipper text-blue-400 mb-1"></i>
+                                <span class="text-xs text-gray-400">Size</span>
+                                <span class="text-sm font-semibold text-white">24.5 MB</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fa-brands fa-android text-green-400 mb-1"></i>
+                                <span class="text-xs text-gray-400">Requires</span>
+                                <span class="text-sm font-semibold text-white">Android 6.0+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Section Action Area -->
+                    <div id="download-section" class="space-y-4">
+                        
+                        <!-- Initial Generate Link Button -->
+                        <button id="btn-generate" onclick="startTimer()" class="btn-glow w-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.02]">
+                            <i class="fa-solid fa-link text-lg"></i>
+                            <span class="text-lg">Generate Download Link</span>
+                        </button>
+
+                        <!-- Timer / Status Text (Hidden initially) -->
+                        <div id="status-container" class="hidden flex-col items-center justify-center py-2">
+                            <p id="status-text" class="text-brand-400 font-medium text-center animate-pulse">
+                                Preparing your file in <span id="timer-display" class="font-bold text-xl text-white mx-1">5</span> seconds...
+                            </p>
+                            <!-- Progress bar -->
+                            <div id="progress-container" class="progress-bar-container">
+                                <div id="progress-bar" class="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Final Download Button (Hidden initially) -->
+                        <a id="btn-download" href="#" class="hidden btn-glow w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.02]">
+                            <i class="fa-solid fa-cloud-arrow-down text-xl animate-bounce"></i>
+                            <span class="text-lg">Download polytechnichub.apk</span>
+                        </a>
+
+                        <div class="text-center mt-4">
+                            <p class="text-xs text-gray-500 flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-shield-halved text-green-500"></i> Verified Safe & Secure by VirusTotal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Details Section -->
+        <section id="details" class="mt-24 pt-12 border-t border-dark-border">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Why Choose Polytechnic Pro?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <h4 class="text-brand-400 font-semibold text-xl mb-3">All Branches Covered</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Whether you are in Computer Science, Mechanical, Civil, Electrical, or Electronics engineering, we have complete semester-wise materials for your specific curriculum.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h4 class="text-brand-400 font-semibold text-xl mb-3">Ad-Free Experience</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Unlike other platforms that bombard you with popups while studying, the Pro APK ensures a clean, distraction-free environment for maximum focus.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <h4 class="text-brand-400 font-semibold text-xl mb-3">Built-in PDF Viewer</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">No need for external apps. Open notes, blueprints, and papers instantly with our lightning-fast, night-mode enabled internal document viewer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Banner Ad Placeholder -->
+        <div class="w-full max-w-4xl mx-auto h-24 ad-placeholder rounded-xl mt-16 mb-8 shadow-inner">
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-rectangle-ad text-2xl mb-1"></i>
+                <span>Advertisement (728x90)</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b1120] border-t border-dark-border py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-brand-500"></i>
+                <span class="text-white font-semibold">Polytechnic Hub &copy; 2026</span>
+            </div>
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="#" class="hover:text-brand-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">DMCA</a>
+                <a href="#" class="hover:text-brand-400 transition-colors">Contact</a>
+            </div>
+            <div class="text-xs text-gray-600">
+                Not affiliated with any official government educational board.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        const TIMER_SECONDS = 5;
+        const FILE_NAME = "polytechnichub.apk";
+
+        function startTimer() {
+            const btnGenerate = document.getElementById('btn-generate');
+            const statusContainer = document.getElementById('status-container');
+            const timerDisplay = document.getElementById('timer-display');
+            const btnDownload = document.getElementById('btn-download');
+            const statusText = document.getElementById('status-text');
+            const progressContainer = document.getElementById('progress-container');
+            const progressBar = document.getElementById('progress-bar');
+
+            // Hide generate button, show timer
+            btnGenerate.classList.add('hidden');
+            statusContainer.classList.remove('hidden');
+            statusContainer.classList.add('flex');
+            progressContainer.style.display = 'block';
+            
+            let timeLeft = TIMER_SECONDS;
+            timerDisplay.innerText = timeLeft;
+
+            // Progress bar animation setup
+            let progress = 0;
+            const intervalTime = 100; // update every 100ms
+            const totalIntervals = (TIMER_SECONDS * 1000) / intervalTime;
+            const progressIncrement = 100 / totalIntervals;
+
+            // Update Progress Bar
+            const progressInterval = setInterval(() => {
+                progress += progressIncrement;
+                if(progress <= 100) {
+                    progressBar.style.width = `${progress}%`;
+                }
+            }, intervalTime);
+
+            // Countdown Timer
+            const countdownInterval = setInterval(() => {
+                timeLeft--;
+                timerDisplay.innerText = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    clearInterval(progressInterval);
+                    
+                    // Update UI state for final download
+                    progressBar.style.width = '100%';
+                    statusText.innerHTML = '<span class="text-green-400"><i class="fa-solid fa-check-circle mr-1"></i> Link Generated Successfully!</span>';
+                    statusText.classList.remove('animate-pulse');
+                    
+                    // Show final download button after a tiny delay for visual effect
+                    setTimeout(() => {
+                        btnDownload.classList.remove('hidden');
+                        
+                        // Setup the mock download action
+                        btnDownload.addEventListener('click', function(e) {
+                            e.preventDefault(); // Prevent default link behavior
+                            triggerMockDownload();
+                        });
+
+                    }, 500);
+                }
+            }, 1000);
+        }
+
+        // Function to create a dummy blob and trigger download to simulate APK download
+        function triggerMockDownload() {
+            // Change button state to downloading
+            const btnDownload = document.getElementById('btn-download');
+            const originalHTML = btnDownload.innerHTML;
+            btnDownload.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-xl"></i><span class="text-lg">Downloading...</span>';
+            btnDownload.classList.add('btn-disabled');
+            btnDownload.style.pointerEvents = 'none';
+
+            // Create a tiny dummy text file to act as the "APK" for demonstration
+            const content = "This is a dummy file representing the Polytechnic Pro APK (polytechnichub.apk). In a real scenario, this link would point to the actual APK file hosted on a server.";
+            const blob = new Blob([content], { type: 'application/vnd.android.package-archive' });
+            const url = window.URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = FILE_NAME;
+            
+            document.body.appendChild(a);
+            a.click();
+            
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+
+            // Fire confetti!
+            fireConfetti();
+
+            // Reset button after small delay
+            setTimeout(() => {
+                btnDownload.innerHTML = '<i class="fa-solid fa-check text-xl"></i><span class="text-lg">Download Complete</span>';
+                btnDownload.classList.replace('from-blue-600', 'from-green-600');
+                btnDownload.classList.replace('to-indigo-600', 'to-emerald-600');
+                
+                // Allow downloading again after a few seconds
+                setTimeout(() => {
+                    btnDownload.innerHTML = originalHTML;
+                    btnDownload.classList.remove('btn-disabled');
+                    btnDownload.style.pointerEvents = 'auto';
+                    btnDownload.classList.replace('from-green-600', 'from-blue-600');
+                    btnDownload.classList.replace('to-emerald-600', 'to-indigo-600');
+                }, 3000);
+            }, 1000);
+        }
+
+        function fireConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const pieces = [];
+            const colors = ['#14b8a6', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6'];
+
+            for (let i = 0; i < 100; i++) {
+                pieces.push({
+                    x: canvas.width / 2,
+                    y: canvas.height / 2 + 100, // Start slightly below center
+                    vx: (Math.random() - 0.5) * 20,
+                    vy: (Math.random() - 1) * 20 - 5,
+                    size: Math.random() * 10 + 5,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rotation: Math.random() * 360,
+                    rotationSpeed: (Math.random() - 0.5) * 10
+                });
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let active = false;
+
+                pieces.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.5; // Gravity
+                    p.rotation += p.rotationSpeed;
+
+                    if (p.y < canvas.height) {
+                        active = true;
+                        ctx.save();
+                        ctx.translate(p.x, p.y);
+                        ctx.rotate(p.rotation * Math.PI / 180);
+                        ctx.fillStyle = p.color;
+                        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+                        ctx.restore();
+                    }
+                });
+
+                if (active) {
+                    requestAnimationFrame(animate);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            animate();
+            
+            // Handle resize for canvas
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+    </script>
+</body>
+</html>
